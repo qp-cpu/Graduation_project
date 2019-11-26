@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="life.majiang.community.dao.PublishEntityMapper" >
+  <resultMap id="BaseResultMap" type="life.majiang.community.entity.PublishEntity" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="descrition" property="descrition" jdbcType="VARCHAR" />
+    <result column="gmt_create" property="gmtCreate" jdbcType="BIGINT" />
+    <result column="gmt_modified" property="gmtModified" jdbcType="BIGINT" />
+    <result column="creator" property="creator" jdbcType="INTEGER" />
+    <result column="comment_count" property="commentCount" jdbcType="INTEGER" />
+    <result column="view_count" property="viewCount" jdbcType="INTEGER" />
+    <result column="like_count" property="likeCount" jdbcType="INTEGER" />
+    <result column="tag" property="tag" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, title, descrition, gmt_create, gmt_modified, creator, comment_count, view_count, 
+    like_count, tag
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from question
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from question
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="life.majiang.community.entity.PublishEntity" >
+    insert into question (id, title, descrition, 
+      gmt_create, gmt_modified, creator, 
+      comment_count, view_count, like_count, 
+      tag)
+    values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{descrition,jdbcType=VARCHAR}, 
+      #{gmtCreate,jdbcType=BIGINT}, #{gmtModified,jdbcType=BIGINT}, #{creator,jdbcType=INTEGER}, 
+      #{commentCount,jdbcType=INTEGER}, #{viewCount,jdbcType=INTEGER}, #{likeCount,jdbcType=INTEGER}, 
+      #{tag,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="life.majiang.community.entity.PublishEntity" >
+    insert into question
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="title != null" >
+        title,
+      </if>
+      <if test="descrition != null" >
+        descrition,
+      </if>
+      <if test="gmtCreate != null" >
+        gmt_create,
+      </if>
+      <if test="gmtModified != null" >
+        gmt_modified,
+      </if>
+      <if test="creator != null" >
+        creator,
+      </if>
+      <if test="commentCount != null" >
+        comment_count,
+      </if>
+      <if test="viewCount != null" >
+        view_count,
+      </if>
+      <if test="likeCount != null" >
+        like_count,
+      </if>
+      <if test="tag != null" >
+        tag,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="title != null" >
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="descrition != null" >
+        #{descrition,jdbcType=VARCHAR},
+      </if>
+      <if test="gmtCreate != null" >
+        #{gmtCreate,jdbcType=BIGINT},
+      </if>
+      <if test="gmtModified != null" >
+        #{gmtModified,jdbcType=BIGINT},
+      </if>
+      <if test="creator != null" >
+        #{creator,jdbcType=INTEGER},
+      </if>
+      <if test="commentCount != null" >
+        #{commentCount,jdbcType=INTEGER},
+      </if>
+      <if test="viewCount != null" >
+        #{viewCount,jdbcType=INTEGER},
+      </if>
+      <if test="likeCount != null" >
+        #{likeCount,jdbcType=INTEGER},
+      </if>
+      <if test="tag != null" >
+        #{tag,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="life.majiang.community.entity.PublishEntity" >
+    update question
+    <set >
+      <if test="title != null" >
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="descrition != null" >
+        descrition = #{descrition,jdbcType=VARCHAR},
+      </if>
+      <if test="gmtCreate != null" >
+        gmt_create = #{gmtCreate,jdbcType=BIGINT},
+      </if>
+      <if test="gmtModified != null" >
+        gmt_modified = #{gmtModified,jdbcType=BIGINT},
+      </if>
+      <if test="creator != null" >
+        creator = #{creator,jdbcType=INTEGER},
+      </if>
+      <if test="commentCount != null" >
+        comment_count = #{commentCount,jdbcType=INTEGER},
+      </if>
+      <if test="viewCount != null" >
+        view_count = #{viewCount,jdbcType=INTEGER},
+      </if>
+      <if test="likeCount != null" >
+        like_count = #{likeCount,jdbcType=INTEGER},
+      </if>
+      <if test="tag != null" >
+        tag = #{tag,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="life.majiang.community.entity.PublishEntity" >
+    update question
+    set title = #{title,jdbcType=VARCHAR},
+      descrition = #{descrition,jdbcType=VARCHAR},
+      gmt_create = #{gmtCreate,jdbcType=BIGINT},
+      gmt_modified = #{gmtModified,jdbcType=BIGINT},
+      creator = #{creator,jdbcType=INTEGER},
+      comment_count = #{commentCount,jdbcType=INTEGER},
+      view_count = #{viewCount,jdbcType=INTEGER},
+      like_count = #{likeCount,jdbcType=INTEGER},
+      tag = #{tag,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="getuser" parameterType="int" resultType="life.majiang.community.entity.PublishEntity">
+        select * from question where id = #{id}
+    </select>
+
+  <insert id="insertpublish" parameterType="life.majiang.community.entity.PublishEntity">
+        insert into question(id,title,descrition,gmt_create,gmt_modified,creator,tag) values (#{id},#{title},#{descrition},#{gmtCreate},#{gmtModified},#{creator},#{tag})
+    </insert>
+
+  <select id="selectAll" parameterType="int" resultType="life.majiang.community.entity.PublishEntity">
+        select * from question order by gmt_create desc limit #{ofszie}, #{size};
+    </select>
+
+  <select id="list" parameterType="int" resultType="life.majiang.community.entity.PublishEntity">
+        select * from question  where creator=#{id} order by gmt_create desc limit #{ofszie}, #{size};
+    </select>
+
+  <select id="count" parameterType="int" resultType="int">
+        select count(1) from question;
+    </select>
+  <select id="count1" parameterType="int" resultType="int">
+        select count(1)  from question where creator=#{creator};
+    </select>
+
+  <select id="getBYid" parameterType="int" resultType="life.majiang.community.entity.PublishEntity">
+        select * from question where id=#{id};
+    </select>
+
+  <update id="updateByid" parameterType="life.majiang.community.entity.PublishEntity">
+        update question set title=#{title},gmt_modified=#{gmtModified},descrition=#{descrition},tag=#{tag} where id=#{id}
+    </update>
+
+  <update id="updateViewCountBYid" parameterType="integer">
+    update question set view_count=view_count+1 where id=#{id}
+  </update>
+  <update id="incCommentCount" parameterType="life.majiang.community.entity.PublishEntity">
+    update question set comment_count=comment_count + #{commentCount} where id=#{id}
+  </update>
+  <select id="selectRelated" parameterType="life.majiang.community.entity.PublishEntity" resultMap="BaseResultMap">
+    select * from question where id !=#{id} and tag regexp #{tag}
+  </select>
+</mapper>
