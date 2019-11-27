@@ -7,7 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="microservicecloudproviderdept8887" />
+        <module name="microservicecloudeureka7001" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="microservicecloudeureka7001" options="-parameters" />
+      <module name="microservicecloudproviderdept8887" options="-parameters" />
+    </option>
   </component>
 </project>
