@@ -5,6 +5,7 @@ import life.majiang.community.dto.GithubUser;
 import life.majiang.community.entity.UserEntity;
 import life.majiang.community.provider.GithubProvider;
 import life.majiang.community.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -17,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
 
 @Controller
+
 public class AuthorizeController {
 
     @Autowired
@@ -34,7 +36,7 @@ public class AuthorizeController {
     private String redirect_url;
 
     @Autowired
-   private GithubProvider githubProvider;
+    private GithubProvider githubProvider;
 
     @GetMapping("/callback")
     public String callback(@RequestParam(name="code") String code,
@@ -50,29 +52,29 @@ public class AuthorizeController {
         String accessToken = githubProvider.getAccessToken(accesstokenDTO);
         GithubUser githubUser = githubProvider.getuser(accessToken);
         if(githubUser!=null)
-       {
-           String accountId=String.valueOf(githubUser.getId());
-           //登录成功
-           UserEntity userEntity = new UserEntity();
-           String token = UUID.randomUUID().toString();
-           userEntity.setToken(token);
-           userEntity.setName(githubUser.getName());
-           userEntity.setAccountId(accountId);
-           userEntity.setAvatarUrl(String.valueOf(githubUser.getId()));
-           userEntity.setBio(githubUser.getBio());
-           userEntity.setAvatarUrl(githubUser.getAvatar_url());
-           //把获取的信息注入数据库
-           userService.createOrUpdate(userEntity);
-           System.out.println(token);
-           response.addCookie(new Cookie("token",token));
-
-           return "redirect:/";
-       }
-       else
-       {
-           //登录失败，重新登录
-           return "redirect:/";
-       }
+        {
+            String accountId=String.valueOf(githubUser.getId());
+            //登录成功
+            UserEntity userEntity = new UserEntity();
+            String token = UUID.randomUUID().toString();
+            userEntity.setToken(token);
+            userEntity.setName(githubUser.getName());
+            userEntity.setAccountId(accountId);
+            userEntity.setAvatarUrl(String.valueOf(githubUser.getId()));
+            userEntity.setBio(githubUser.getBio());
+            userEntity.setAvatarUrl(githubUser.getAvatar_url());
+            //把获取的信息注入数据库
+            userService.createOrUpdate(userEntity);
+            System.out.println(token);
+            response.addCookie(new Cookie("token",token));
+//            log.error("callback get github error,{}",githubUser);
+            return "redirect:/";
+        }
+        else
+        {
+            //登录失败，重新登录
+            return "redirect:/";
+        }
     }
     @GetMapping("/logout")
     public String logout(HttpServletRequest request,

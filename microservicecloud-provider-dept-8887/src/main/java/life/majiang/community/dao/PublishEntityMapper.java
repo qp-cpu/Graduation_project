@@ -3,7 +3,6 @@ package life.majiang.community.dao;
 import life.majiang.community.entity.PublishEntity;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
 
 @Mapper
@@ -20,18 +19,27 @@ public interface PublishEntityMapper {
 
     int updateByPrimaryKey(PublishEntity record);
 
-    public Integer insertpublish(PublishEntity publishEntity);
+    Integer insertpublish(PublishEntity publishEntity);
 
-    public List<PublishEntity> selectAll(@Param("ofszie") Integer ofszie, @Param("size") Integer size);
-    public  Integer count();
-    public  Integer count1(@Param("creator") Integer creator);
-    List<PublishEntity> list(@Param("id") Integer id, @Param("ofszie") Integer ofszie, @Param("size") Integer size);
-    public  PublishEntity getBYid(@Param("id") Integer id);
+    List<PublishEntity> selectAll(@Param("ofszie") Integer ofszie, @Param("size") Integer size);
 
-    public  void updateByid(PublishEntity publishEntity);
+    Integer count();
+
+    Integer count1(@Param("creator") Integer creator);
+
+    List<PublishEntity> list(@Param("id") Integer id,@Param("ofszie") Integer ofszie, @Param("size") Integer size);
+
+    PublishEntity getBYid(@Param("id") Integer id);
+
+    void updateByid(PublishEntity publishEntity);
 
     void updateViewCountBYid(@Param("id") Integer id);
+
     int incCommentCount(PublishEntity record);
 
     List<PublishEntity> selectRelated(PublishEntity publishEntity);
+
+    Integer serachcount(@Param("serach") String serach);
+
+    List<PublishEntity> serachAll(@Param("serach") String serach,@Param("ofszie") Integer ofszie, @Param("size") Integer size);
 }

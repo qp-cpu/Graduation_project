@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @Controller
 @RequestMapping("${server.error.path:${eror.path:/path}}")
@@ -34,7 +35,7 @@ public class CustmizeErrorController implements ErrorController {
         return new ModelAndView("error");
     }
 
-    private HttpStatus getStatus(HttpServletRequest request)
+    private  HttpStatus getStatus(HttpServletRequest request)
     {
         Integer statuCode= (Integer) request.getAttribute("javax.servlet.erroe.status.status_code");
         if(statuCode==null)

@@ -1,8 +1,10 @@
 package life.majiang.community.dao;
 
 import life.majiang.community.entity.CommentEntity;
+import life.majiang.community.entity.PublishEntity;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.omg.CORBA.INTERNAL;
 
 import java.util.List;
 

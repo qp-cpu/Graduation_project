@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="microservicecloudzuulgateway9527" />
-        <module name="microservicecloudproviderdept8887" />
         <module name="microservicecloudeureka7001" />
+        <module name="microservicecloudzuulgateway9527" />
+        <module name="microservicecloudproviderdept8888" />
+        <module name="microservicecloudproviderdept8887" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

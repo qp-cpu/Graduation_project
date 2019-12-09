@@ -18,7 +18,7 @@
     like_count, tag
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from question
     where id = #{id,jdbcType=INTEGER}
@@ -190,4 +190,11 @@
   <select id="selectRelated" parameterType="life.majiang.community.entity.PublishEntity" resultMap="BaseResultMap">
     select * from question where id !=#{id} and tag regexp #{tag}
   </select>
+
+  <select id="serachcount"  resultType="int">
+     select count(1) from question where title like #{serach}
+  </select>
+  <select id="serachAll" resultType="life.majiang.community.entity.PublishEntity">
+        select * from question where title like #{serach} order by gmt_create desc limit ${ofszie}, ${size};
+    </select>
 </mapper>

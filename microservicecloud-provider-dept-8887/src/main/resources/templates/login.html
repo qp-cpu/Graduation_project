@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>欢迎 登录</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap-theme.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/community.css}"/>
+    <link rel="stylesheet" href="/static/css/signin.css">
+</head>
+<body class="text-center">
+<form class="form-signin" action='/login' method="post">
+    <img class="mb-4" src="static/images/bootstrap-solid.svg" alt=""
+         width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal" >请登录</h1>
+    <!--判断-->
+    <input type="text" id="username" name="username" style="margin-bottom: 10px" class="form-control" placeholder="Username" th:placeholder="请输入用户名"
+           required="" autofocus="">
+    <input  type="password" id="password" name="password" style="margin-bottom: 10px" class="form-control" placeholder="Password"
+           th:placeholder="请输入密码" required="">
+    <button class="btn btn-lg btn-primary btn-block" type="submit ">登录</button>
+    <p class="mt-5 mb-3 text-muted" style="margin-top: 10px">© 2019-2020</p>
+    <a class="btn btn-sm" href="https://github.com/login/oauth/authorize?client_id=079686b431e42084be6c&redirect_uri=http://localhost:8887/callback&scope=user&state=1">github登录</a>
+    <a class="btn btn-sm" href="/sign">注册</a>
+</form>
+</body>
+</html>

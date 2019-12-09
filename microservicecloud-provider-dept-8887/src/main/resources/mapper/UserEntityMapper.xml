@@ -15,7 +15,7 @@
     id, account_id, name, token, gmt_create, gmt_modified, bio, avatar_url
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from user
     where id = #{id,jdbcType=INTEGER}
@@ -147,5 +147,8 @@
   <update id="updatetoken" parameterType="life.majiang.community.entity.UserEntity" >
         update user set name=#{name},token=#{token},gmt_modified=#{gmtModified},avatar_url=#{avatarUrl} where account_id=#{accountId}
     </update>
+  <select id="selectBYnameAndpwd" parameterType="life.majiang.community.entity.UserEntity" resultType="life.majiang.community.entity.UserEntity">
+    select * from user where name=#{name} and account_id=#{accountId}
+  </select>
 
 </mapper>
