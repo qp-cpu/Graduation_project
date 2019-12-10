@@ -67,7 +67,6 @@ public class AuthorizeController {
             userService.createOrUpdate(userEntity);
             System.out.println(token);
             response.addCookie(new Cookie("token",token));
-//            log.error("callback get github error,{}",githubUser);
             return "redirect:/";
         }
         else

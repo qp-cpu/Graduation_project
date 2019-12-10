@@ -37,7 +37,9 @@ public class LoginController {
         UserEntity selectuser = userService.selectuser(userEntity);
         if (selectuser !=null)
         {
-            response.addCookie(new Cookie("token",selectuser.getToken()));
+
+            Cookie token = new Cookie("token", selectuser.getToken());
+            response.addCookie(token);
             return "redirect:/";
         }
         else {
