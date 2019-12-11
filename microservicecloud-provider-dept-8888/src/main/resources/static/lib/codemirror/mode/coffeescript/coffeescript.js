@@ -19,7 +19,7 @@ CodeMirror.defineMode("coffeescript", function(conf, parserConf) {
   var ERRORCLASS = "error";
 
   function wordRegexp(words) {
-    return new RegExp("^((" + words.join(")|(") + "))\\b");
+    return new RegExp("^((" + words.join(")|(") + "))/b");
   }
 
   var operators = /^(?:->|=>|\+[+=]?|-[\-=]?|\*[\*=]?|\/[\/=]?|[=!]=|<[><]?=?|>>?=?|%=?|&=?|\|=?|\^=?|\~|!|\?|(or|and|\|\||&&|\?)=)/;
@@ -177,8 +177,8 @@ CodeMirror.defineMode("coffeescript", function(conf, parserConf) {
   function tokenFactory(delimiter, singleline, outclass) {
     return function(stream, state) {
       while (!stream.eol()) {
-        stream.eatWhile(/[^'"\/\\]/);
-        if (stream.eat("\\")) {
+        stream.eatWhile(/[^'"\//]/);
+        if (stream.eat("/")) {
           stream.next();
           if (singleline && stream.eol()) {
             return outclass;

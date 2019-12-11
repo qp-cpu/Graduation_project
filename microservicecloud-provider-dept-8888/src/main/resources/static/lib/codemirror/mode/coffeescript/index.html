@@ -73,7 +73,7 @@ breaker = if typeof(StopIteration) is 'undefined' then '__break__' else StopIter
 
 
 # Helper function to escape **RegExp** contents, because JS doesn't have one.
-escapeRegExp = (string) -> string.replace(/([.*+?^${}()|[\]\/\\])/g, '\\$1')
+escapeRegExp = (string) -> string.replace(/([.*+?^${}()|[\]\//])/g, '/$1')
 
 
 # Save bytes in the minified (but not gzipped) version:
@@ -649,11 +649,11 @@ _.template = (str, data) ->
   fn = new Function 'obj',
     'var p=[],print=function(){p.push.apply(p,arguments);};' +
     'with(obj||{}){p.push(\'' +
-    str.replace(/\r/g, '\\r')
-       .replace(/\n/g, '\\n')
-       .replace(/\t/g, '\\t')
+    str.replace(/\r/g, '/r')
+       .replace(/\n/g, '/n')
+       .replace(/\t/g, '/t')
        .replace(endMatch,"���")
-       .split("'").join("\\'")
+       .split("'").join("/'")
        .split("���").join("'")
        .replace(c.interpolate, "',$1,'")
        .split(c.start).join("');")

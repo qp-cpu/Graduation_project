@@ -50,7 +50,7 @@ CodeMirror.defineMode("properties", function() {
       } else if (ch === "=" || ch === ":") {
         state.position = "quote";
         return null;
-      } else if (ch === "\\" && state.position === "quote") {
+      } else if (ch === "/" && state.position === "quote") {
         if (stream.next() !== "u") {    // u = Unicode sequence \u1234
           // Multiline value
           state.nextMultiline = true;

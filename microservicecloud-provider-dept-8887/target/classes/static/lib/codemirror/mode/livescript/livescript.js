@@ -74,9 +74,9 @@
     return external;
   });
 
-  var identifier = '(?![\\d\\s])[$\\w\\xAA-\\uFFDC](?:(?!\\s)[$\\w\\xAA-\\uFFDC]|-[A-Za-z])*';
-  var indenter = RegExp('(?:[({[=:]|[-~]>|\\b(?:e(?:lse|xport)|d(?:o|efault)|t(?:ry|hen)|finally|import(?:\\s*all)?|const|var|let|new|catch(?:\\s*' + identifier + ')?))\\s*$');
-  var keywordend = '(?![$\\w]|-[A-Za-z]|\\s*:(?![:=]))';
+  var identifier = '(?![/d/s])[$/w/xAA-/uFFDC](?:(?!/s)[$/w/xAA-/uFFDC]|-[A-Za-z])*';
+  var indenter = RegExp('(?:[({[=:]|[-~]>|/b(?:e(?:lse|xport)|d(?:o|efault)|t(?:ry|hen)|finally|import(?:/s*all)?|const|var|let|new|catch(?:/s*' + identifier + ')?))/s*$');
+  var keywordend = '(?![$/w]|-[A-Za-z]|/s*:(?![:=]))';
   var stringfill = {
     token: 'string',
     regex: '.+'
@@ -85,14 +85,14 @@
     start: [
       {
         token: 'comment.doc',
-        regex: '/\\*',
+        regex: '//*',
         next: 'comment'
       }, {
         token: 'comment',
         regex: '#.*'
       }, {
         token: 'keyword',
-        regex: '(?:t(?:h(?:is|row|en)|ry|ypeof!?)|c(?:on(?:tinue|st)|a(?:se|tch)|lass)|i(?:n(?:stanceof)?|mp(?:ort(?:\\s+all)?|lements)|[fs])|d(?:e(?:fault|lete|bugger)|o)|f(?:or(?:\\s+own)?|inally|unction)|s(?:uper|witch)|e(?:lse|x(?:tends|port)|val)|a(?:nd|rguments)|n(?:ew|ot)|un(?:less|til)|w(?:hile|ith)|o[fr]|return|break|let|var|loop)' + keywordend
+        regex: '(?:t(?:h(?:is|row|en)|ry|ypeof!?)|c(?:on(?:tinue|st)|a(?:se|tch)|lass)|i(?:n(?:stanceof)?|mp(?:ort(?:/s+all)?|lements)|[fs])|d(?:e(?:fault|lete|bugger)|o)|f(?:or(?:\\s+own)?|inally|unction)|s(?:uper|witch)|e(?:lse|x(?:tends|port)|val)|a(?:nd|rguments)|n(?:ew|ot)|un(?:less|til)|w(?:hile|ith)|o[fr]|return|break|let|var|loop)' + keywordend
       }, {
         token: 'constant.language',
         regex: '(?:true|false|yes|no|on|off|null|void|undefined)' + keywordend

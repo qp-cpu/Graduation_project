@@ -54,7 +54,7 @@
      "[link&formatting&formatting-link <][link user@example.com][link&formatting&formatting-link >]");
 
   FT("formatting_escape",
-     "[formatting-escape \\*]");
+     "[formatting-escape /*]");
 
   MT("plainText",
      "foo");
@@ -695,16 +695,16 @@
   // !   exclamation mark
 
   MT("escapeBacktick",
-     "foo \\`bar\\`");
+     "foo /`bar/`");
 
   MT("doubleEscapeBacktick",
-     "foo \\\\[comment `bar\\\\`]");
+     "foo //[comment `bar//`]");
 
   MT("escapeAsterisk",
-     "foo \\*bar\\*");
+     "foo /*bar/*");
 
   MT("doubleEscapeAsterisk",
-     "foo \\\\[em *bar\\\\*]");
+     "foo //[em *bar\\\\*]");
 
   MT("escapeUnderscore",
      "foo \\_bar\\_");

@@ -55,12 +55,15 @@ public class LoginController {
                          ){
         UserEntity userEntit=new UserEntity();
         userEntit.setName(username);
-        userEntit.setAvatarUrl(avatarurl);
         userEntit.setAccountId(password);
         userEntit.setGmtCreate(System.currentTimeMillis());
         userEntit.setGmtModified(System.currentTimeMillis());
         userEntit.setBio(description);
         userEntit.setToken(UUID.randomUUID().toString());
+        String filename=UUID.randomUUID().toString()+".png";
+        userService.getphoto(avatarurl,filename);
+        String avatar_url1="http://localhost:8888/static/images/"+filename;
+        userEntit.setAvatarUrl(avatar_url1);
         if(StringUtils.isBlank(username))
         {
             throw new CustmizeException(CustomizeErrorcode.SIGN_IS_NULL);

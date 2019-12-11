@@ -38,11 +38,11 @@ CodeMirror.defineMode("smartymixed", function(config) {
     settings.rightDelimiter = config.rightDelimiter;
   }
 
-  function reEsc(str) { return str.replace(/[^\s\w]/g, "\\$&"); }
+  function reEsc(str) { return str.replace(/[^\s\w]/g, "/$&"); }
 
   var reLeft = reEsc(settings.leftDelimiter), reRight = reEsc(settings.rightDelimiter);
   var regs = {
-    smartyComment: new RegExp("^" + reRight + "\\*"),
+    smartyComment: new RegExp("^" + reRight + "/*"),
     literalOpen: new RegExp(reLeft + "literal" + reRight),
     literalClose: new RegExp(reLeft + "\/literal" + reRight),
     hasLeftDelimeter: new RegExp(".*" + reLeft),

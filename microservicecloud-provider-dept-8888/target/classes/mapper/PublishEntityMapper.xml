@@ -195,6 +195,6 @@
      select count(1) from question where title like #{serach}
   </select>
   <select id="serachAll" resultType="life.majiang.community.entity.PublishEntity">
-        select * from question where title like #{serach} order by gmt_create desc limit ${ofszie}, ${size};
+        select * ,IFNULL(title like #{serach},null) from question where title like #{serach} order by gmt_create desc limit ${ofszie}, ${size};
     </select>
 </mapper>

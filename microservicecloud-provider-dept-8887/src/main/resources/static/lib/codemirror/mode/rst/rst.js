@@ -22,8 +22,8 @@ CodeMirror.defineMode('rst', function (config, options) {
   var rx_negative = /^(?:\s\-[\d]+(?:[\.,]\d+)*)/;
 
   var rx_uri_protocol = "[Hh][Tt][Tt][Pp][Ss]?://";
-  var rx_uri_domain = "(?:[\\d\\w.-]+)\\.(?:\\w{2,6})";
-  var rx_uri_path = "(?:/[\\d\\w\\#\\%\\&\\-\\.\\,\\/\\:\\=\\?\\~]+)*";
+  var rx_uri_domain = "(?:[/d/w.-]+)/.(?:/w{2,6})";
+  var rx_uri_path = "(?:/[/d/w/#/%/&/-/./,///:/=/?/~]+)*";
   var rx_uri = new RegExp("^" + rx_uri_protocol + rx_uri_domain + rx_uri_path);
 
   var overlay = {
@@ -89,42 +89,42 @@ CodeMirror.defineMode('rst-base', function (config) {
   ///////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////
 
-  var SEPA = "\\s+";
-  var TAIL = "(?:\\s*|\\W|$)",
+  var SEPA = "/s+";
+  var TAIL = "(?:/s*|/W|$)",
   rx_TAIL = new RegExp(format('^{0}', TAIL));
 
   var NAME =
-    "(?:[^\\W\\d_](?:[\\w!\"#$%&'()\\*\\+,\\-\\.\/:;<=>\\?]*[^\\W_])?)",
+    "(?:[^/W/d_](?:[/w!\"#$%&'()/*/+,/-/.\/:;<=>/?]*[^/W_])?)",
   rx_NAME = new RegExp(format('^{0}', NAME));
   var NAME_WWS =
-    "(?:[^\\W\\d_](?:[\\w\\s!\"#$%&'()\\*\\+,\\-\\.\/:;<=>\\?]*[^\\W_])?)";
+    "(?:[^/W/d_](?:[/w/s!\"#$%&'()/*/+,/-/.\/:;<=>/?]*[^/W_])?)";
   var REF_NAME = format('(?:{0}|`{1}`)', NAME, NAME_WWS);
 
-  var TEXT1 = "(?:[^\\s\\|](?:[^\\|]*[^\\s\\|])?)";
-  var TEXT2 = "(?:[^\\`]+)",
+  var TEXT1 = "(?:[^/s/|](?:[^/|]*[^/s/|])?)";
+  var TEXT2 = "(?:[^/`]+)",
   rx_TEXT2 = new RegExp(format('^{0}', TEXT2));
 
   var rx_section = new RegExp(
-    "^([!'#$%&\"()*+,-./:;<=>?@\\[\\\\\\]^_`{|}~])\\1{3,}\\s*$");
+    "^([!'#$%&\"()*+,-./:;<=>?@/[///]^_`{|}~])/1{3,}/s*$");
   var rx_explicit = new RegExp(
-    format('^\\.\\.{0}', SEPA));
+    format('^/./.{0}', SEPA));
   var rx_link = new RegExp(
     format('^_{0}:{1}|^__:{1}', REF_NAME, TAIL));
   var rx_directive = new RegExp(
     format('^{0}::{1}', REF_NAME, TAIL));
   var rx_substitution = new RegExp(
-    format('^\\|{0}\\|{1}{2}::{3}', TEXT1, SEPA, REF_NAME, TAIL));
+    format('^/|{0}/|{1}{2}::{3}', TEXT1, SEPA, REF_NAME, TAIL));
   var rx_footnote = new RegExp(
-    format('^\\[(?:\\d+|#{0}?|\\*)]{1}', REF_NAME, TAIL));
+    format('^/[(?:/d+|#{0}?|/*)]{1}', REF_NAME, TAIL));
   var rx_citation = new RegExp(
-    format('^\\[{0}\\]{1}', REF_NAME, TAIL));
+    format('^/[{0}/]{1}', REF_NAME, TAIL));
 
   var rx_substitution_ref = new RegExp(
-    format('^\\|{0}\\|', TEXT1));
+    format('^/|{0}/|', TEXT1));
   var rx_footnote_ref = new RegExp(
-    format('^\\[(?:\\d+|#{0}?|\\*)]_', REF_NAME));
+    format('^/[(?:/d+|#{0}?|/*)]_', REF_NAME));
   var rx_citation_ref = new RegExp(
-    format('^\\[{0}\\]_', REF_NAME));
+    format('^/[{0}/]_', REF_NAME));
   var rx_link_ref1 = new RegExp(
     format('^{0}__?', REF_NAME));
   var rx_link_ref2 = new RegExp(
@@ -139,7 +139,7 @@ CodeMirror.defineMode('rst-base', function (config) {
 
   var rx_directive_name = new RegExp(format('^{0}', REF_NAME));
   var rx_directive_tail = new RegExp(format('^::{0}', TAIL));
-  var rx_substitution_text = new RegExp(format('^\\|{0}\\|', TEXT1));
+  var rx_substitution_text = new RegExp(format('^/|{0}/|', TEXT1));
   var rx_substitution_sepa = new RegExp(format('^{0}', SEPA));
   var rx_substitution_name = new RegExp(format('^{0}', REF_NAME));
   var rx_substitution_tail = new RegExp(format('^::{0}', TAIL));
@@ -147,8 +147,8 @@ CodeMirror.defineMode('rst-base', function (config) {
   var rx_link_name = new RegExp(format('^{0}|_', REF_NAME));
   var rx_link_tail = new RegExp(format('^:{0}', TAIL));
 
-  var rx_verbatim = new RegExp('^::\\s*$');
-  var rx_examples = new RegExp('^\\s+(?:>>>|In \\[\\d+\\]:)\\s');
+  var rx_verbatim = new RegExp('^::/s*$');
+  var rx_examples = new RegExp('^/s+(?:>>>|In /[/d+/]:)/s');
 
   ///////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////

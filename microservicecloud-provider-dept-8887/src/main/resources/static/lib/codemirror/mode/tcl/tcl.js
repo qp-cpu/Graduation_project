@@ -97,7 +97,7 @@ CodeMirror.defineMode("tcl", function() {
           end = true;
           break;
         }
-        escaped = !escaped && next == "\\";
+        escaped = !escaped && next == "/";
       }
       if (end) state.tokenize = tokenBase;
         return "string";

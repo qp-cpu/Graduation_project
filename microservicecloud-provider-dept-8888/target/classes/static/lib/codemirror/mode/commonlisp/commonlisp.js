@@ -21,7 +21,7 @@ CodeMirror.defineMode("commonlisp", function (config) {
   function readSym(stream) {
     var ch;
     while (ch = stream.next()) {
-      if (ch == "\\") stream.next();
+      if (ch == "/") stream.next();
       else if (!symbol.test(ch)) { stream.backUp(1); break; }
     }
     return stream.current();
@@ -31,7 +31,7 @@ CodeMirror.defineMode("commonlisp", function (config) {
     if (stream.eatSpace()) {type = "ws"; return null;}
     if (stream.match(numLiteral)) return "number";
     var ch = stream.next();
-    if (ch == "\\") ch = stream.next();
+    if (ch == "/") ch = stream.next();
 
     if (ch == '"') return (state.tokenize = inString)(stream, state);
     else if (ch == "(") { type = "open"; return "bracket"; }
@@ -64,7 +64,7 @@ CodeMirror.defineMode("commonlisp", function (config) {
     var escaped = false, next;
     while (next = stream.next()) {
       if (next == '"' && !escaped) { state.tokenize = base; break; }
-      escaped = !escaped && next == "\\";
+      escaped = !escaped && next == "/";
     }
     return "string";
   }

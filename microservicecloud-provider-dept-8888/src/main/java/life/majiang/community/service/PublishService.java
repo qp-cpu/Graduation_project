@@ -160,7 +160,12 @@ public class PublishService {
             page=pageDto.getTotalpage();
         }
         Integer ofsize= size * (page-1);
+
         List<PublishEntity> publishEntityList=publishDao.serachAll(serach,ofsize,size);
+        if(publishEntityList.size()==0)
+        {
+            throw new CustmizeException(CustomizeErrorcode.QUESTION_IS_NULL);
+        }
         List<PublishDto> publishDtos=new ArrayList<>();
 
         for (PublishEntity publishEntity:publishEntityList)

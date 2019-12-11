@@ -46,7 +46,7 @@ CodeMirror.defineMode("haxe", function(config, parserConfig) {
     while ((next = stream.next()) != null) {
       if (next == end && !escaped)
         return false;
-      escaped = !escaped && next == "\\";
+      escaped = !escaped && next == "/";
     }
     return escaped;
   }

@@ -23,8 +23,6 @@ public class AuthorizeController {
     @Autowired
     private UserService userService;
 
-
-
     @Value("${github.client.id}")
     private String client_Id;
 
@@ -61,12 +59,12 @@ public class AuthorizeController {
             userEntity.setAccountId(accountId);
             userEntity.setAvatarUrl(String.valueOf(githubUser.getId()));
             userEntity.setBio(githubUser.getBio());
-            userEntity.setAvatarUrl(githubUser.getAvatar_url());
+            String avatar_url = githubUser.getAvatar_url();
+            userEntity.setAvatarUrl(avatar_url);
             //把获取的信息注入数据库
             userService.createOrUpdate(userEntity);
             System.out.println(token);
             response.addCookie(new Cookie("token",token));
-//            log.error("callback get github error,{}",githubUser);
             return "redirect:/";
         }
         else

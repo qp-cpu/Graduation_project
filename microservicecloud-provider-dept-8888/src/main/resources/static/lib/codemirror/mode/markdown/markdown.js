@@ -74,7 +74,7 @@ CodeMirror.defineMode("markdown", function(cmCfg, modeCfg) {
   ,   taskListRE = /^\[(x| )\](?=\s)/ // Must follow ulRE or olRE
   ,   atxHeaderRE = /^#+/
   ,   setextHeaderRE = /^(?:\={1,}|-{1,})$/
-  ,   textRE = /^[^#!\[\]*_\\<>` "'(~]+/;
+  ,   textRE = /^[^#!\[\]*_/<>` "'(~]+/;
 
   function switchInline(stream, state, f) {
     state.f = state.inline = f;
@@ -344,7 +344,7 @@ CodeMirror.defineMode("markdown", function(cmCfg, modeCfg) {
 
     var ch = stream.next();
 
-    if (ch === '\\') {
+    if (ch === '/') {
       stream.next();
       if (modeCfg.highlightFormatting) {
         var type = getType(state);
@@ -359,8 +359,8 @@ CodeMirror.defineMode("markdown", function(cmCfg, modeCfg) {
       if (ch === '(') {
         matchCh = ')';
       }
-      matchCh = (matchCh+'').replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
-      var regex = '^\\s*(?:[^' + matchCh + '\\\\]+|\\\\\\\\|\\\\.)' + matchCh;
+      matchCh = (matchCh+'').replace(/([.?*+^$[\]/(){}|-])/g, "/$1");
+      var regex = '^/s*(?:[^' + matchCh + '//]+|////|//.)' + matchCh;
       if (stream.match(new RegExp(regex), true)) {
         return linkhref;
       }
@@ -410,7 +410,7 @@ CodeMirror.defineMode("markdown", function(cmCfg, modeCfg) {
       return type;
     }
 
-    if (ch === '<' && stream.match(/^(https?|ftps?):\/\/(?:[^\\>]|\\.)+>/, false)) {
+    if (ch === '<' && stream.match(/^(https?|ftps?):\/\/(?:[^/>]|/.)+>/, false)) {
       state.f = state.inline = linkInline;
       if (modeCfg.highlightFormatting) state.formatting = "link";
       var type = getType(state);
@@ -422,7 +422,7 @@ CodeMirror.defineMode("markdown", function(cmCfg, modeCfg) {
       return type + linkinline;
     }
 
-    if (ch === '<' && stream.match(/^[^> \\]+@(?:[^\\>]|\\.)+>/, false)) {
+    if (ch === '<' && stream.match(/^[^> /]+@(?:[^/>]|/.)+>/, false)) {
       state.f = state.inline = linkInline;
       if (modeCfg.highlightFormatting) state.formatting = "link";
       var type = getType(state);
@@ -621,7 +621,7 @@ CodeMirror.defineMode("markdown", function(cmCfg, modeCfg) {
     if (stream.peek() === undefined) { // End of line, set flag to check next line
       state.linkTitle = true;
     } else { // More content on line, check if link title
-      stream.match(/^(?:\s+(?:"(?:[^"\\]|\\\\|\\.)+"|'(?:[^'\\]|\\\\|\\.)+'|\((?:[^)\\]|\\\\|\\.)+\)))?/, true);
+      stream.match(/^(?:\s+(?:"(?:[^"/]|//|/.)+"|'(?:[^'/]|//|/.)+'|\((?:[^)/]|//|/.)+\)))?/, true);
     }
     state.f = state.inline = inlineNormal;
     return linkhref;
@@ -631,10 +631,10 @@ CodeMirror.defineMode("markdown", function(cmCfg, modeCfg) {
   function inlineRE(endChar) {
     if (!savedInlineRE[endChar]) {
       // Escape endChar for RegExp (taken from http://stackoverflow.com/a/494122/526741)
-      endChar = (endChar+'').replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
+      endChar = (endChar+'').replace(/([.?*+^$[\]/(){}|-])/g, "/$1");
       // Match any non-endChar, escaped character, as well as the closing
       // endChar.
-      savedInlineRE[endChar] = new RegExp('^(?:[^\\\\]|\\\\.)*?(' + endChar + ')');
+      savedInlineRE[endChar] = new RegExp('^(?:[^//]|//.)*?(' + endChar + ')');
     }
     return savedInlineRE[endChar];
   }

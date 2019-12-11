@@ -6,6 +6,7 @@ import life.majiang.community.exception.CustomizeErrorcode;
 import life.majiang.community.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,6 +21,12 @@ public class LoginController {
 
     @Autowired
     private UserService userService;
+
+    @Value("${absoluteImgPath}")
+    String absoluteImgPath;
+
+    @Value("${sonImgPath}")
+    String sonImgPath;
 
 
     @GetMapping("/login")
@@ -37,8 +44,9 @@ public class LoginController {
         UserEntity selectuser = userService.selectuser(userEntity);
         if (selectuser !=null)
         {
-            Cookie cookie = new Cookie("token", selectuser.getToken());
-            response.addCookie(cookie);
+
+            Cookie token = new Cookie("token", selectuser.getToken());
+            response.addCookie(token);
             return "redirect:/";
         }
         else {
@@ -51,15 +59,18 @@ public class LoginController {
                          @RequestParam(value = "password",required =false) String password,
                          @RequestParam(value = "description" ,required = false) String description,
                          @RequestParam(value = "avatarurl",required = false) String avatarurl
-                         ){
+    ){
         UserEntity userEntit=new UserEntity();
         userEntit.setName(username);
-        userEntit.setAvatarUrl(avatarurl);
         userEntit.setAccountId(password);
         userEntit.setGmtCreate(System.currentTimeMillis());
         userEntit.setGmtModified(System.currentTimeMillis());
         userEntit.setBio(description);
         userEntit.setToken(UUID.randomUUID().toString());
+        String filename=UUID.randomUUID().toString()+".png";
+        userService.getphoto(avatarurl,filename);
+        String avatar_url1=sonImgPath+filename;
+        userEntit.setAvatarUrl(avatar_url1);
         if(StringUtils.isBlank(username))
         {
             throw new CustmizeException(CustomizeErrorcode.SIGN_IS_NULL);

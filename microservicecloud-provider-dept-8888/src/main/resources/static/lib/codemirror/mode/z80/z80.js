@@ -69,12 +69,12 @@ CodeMirror.defineMode('z80', function() {
           if (w == '"')
             break;
 
-          if (w == '\\')
+          if (w == '/')
             stream.next();
         }
         return 'string';
       } else if (stream.eat('\'')) {
-        if (stream.match(/\\?.'/))
+        if (stream.match(//?.'/))
           return 'number';
       } else if (stream.eat('.') || stream.sol() && stream.eat('#')) {
         state.context = 4;

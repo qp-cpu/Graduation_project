@@ -22,8 +22,8 @@ CodeMirror.defineMode('rst', function (config, options) {
   var rx_negative = /^(?:\s\-[\d]+(?:[\.,]\d+)*)/;
 
   var rx_uri_protocol = "[Hh][Tt][Tt][Pp][Ss]?://";
-  var rx_uri_domain = "(?:[\\d\\w.-]+)\\.(?:\\w{2,6})";
-  var rx_uri_path = "(?:/[\\d\\w\\#\\%\\&\\-\\.\\,\\/\\:\\=\\?\\~]+)*";
+  var rx_uri_domain = "(?:[/d/w.-]+)/.(?:/w{2,6})";
+  var rx_uri_path = "(?:/[/d/w/#/%/&/-/./,///:/=/?/~]+)*";
   var rx_uri = new RegExp("^" + rx_uri_protocol + rx_uri_domain + rx_uri_path);
 
   var overlay = {
@@ -89,12 +89,12 @@ CodeMirror.defineMode('rst-base', function (config) {
   ///////////////////////////////////////////////////////////////////////////
   ///////////////////////////////////////////////////////////////////////////
 
-  var SEPA = "\\s+";
-  var TAIL = "(?:\\s*|\\W|$)",
+  var SEPA = "/s+";
+  var TAIL = "(?:/s*|/W|$)",
   rx_TAIL = new RegExp(format('^{0}', TAIL));
 
   var NAME =
-    "(?:[^\\W\\d_](?:[\\w!\"#$%&'()\\*\\+,\\-\\.\/:;<=>\\?]*[^\\W_])?)",
+    "(?:[^/W/d_](?:[/w!\"#$%&'()/*/+,/-/.\/:;<=>/?]*[^\\W_])?)",
   rx_NAME = new RegExp(format('^{0}', NAME));
   var NAME_WWS =
     "(?:[^\\W\\d_](?:[\\w\\s!\"#$%&'()\\*\\+,\\-\\.\/:;<=>\\?]*[^\\W_])?)";

@@ -40,18 +40,18 @@
             if (stream.peek() === state.stringType) {
               stream.next(); // Skip quote
               state.stack.shift(); // Clear flag
-            } else if (stream.peek() === "\\") {
+            } else if (stream.peek() === "/") {
               stream.next();
               stream.next();
             } else {
-              stream.match(/^.[^\\\"\']*/);
+              stream.match(/^.[^/\"\']*/);
             }
           }
           return "string";
 
         case "characterClass":
           while (state.stack[0] === "characterClass" && !stream.eol()) {
-            if (!(stream.match(/^[^\]\\]+/) || stream.match(/^\\./)))
+            if (!(stream.match(/^[^\]/]+/) || stream.match(/^/./)))
               state.stack.shift();
           }
           return "operator";
@@ -68,8 +68,8 @@
         case ":":
           stream.next();
           return "operator";
-        case "\\":
-          if (stream.match(/\\[a-z]+/)) return "string-2";
+        case "/":
+          if (stream.match(//[a-z]+/)) return "string-2";
           else return null;
         case ".":
         case ",":

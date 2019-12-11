@@ -125,7 +125,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
           state.tokenize = tokenBase;
           break;
         }
-        escaped = !escaped && ch == "\\";
+        escaped = !escaped && ch == "/";
       }
       return "string";
     };
@@ -302,7 +302,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
     hooks: {
       "@":   hookVar,
       "`":   hookIdentifier,
-      "\\":  hookClient
+      "/":  hookClient
     }
   });
 
@@ -318,7 +318,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
     hooks: {
       "@":   hookVar,
       "`":   hookIdentifier,
-      "\\":  hookClient
+      "/":  hookClient
     }
   });
 

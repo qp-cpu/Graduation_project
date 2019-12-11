@@ -142,7 +142,7 @@
           state.indent += config.indentUnit;
           state.soyState.push("literal");
           return "keyword";
-        } else if (match = stream.match(/^\{([\/@\\]?\w*)/)) {
+        } else if (match = stream.match(/^\{([\/@/]?\w*)/)) {
           if (match[1] != "/switch")
             state.indent += (/^(\/|(else|elseif|case|default)$)/.test(match[1]) && state.tag != "switch" ? 1 : 2) * config.indentUnit;
           state.tag = match[1];
