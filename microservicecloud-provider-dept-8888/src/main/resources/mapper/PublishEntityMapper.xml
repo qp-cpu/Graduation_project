@@ -197,4 +197,9 @@
   <select id="serachAll" resultType="life.majiang.community.entity.PublishEntity">
         select * ,IFNULL(title like #{serach},null) from question where title like #{serach} order by gmt_create desc limit ${ofszie}, ${size};
     </select>
+
+  <select id="selectHottopic"  parameterType="int" resultType="life.majiang.community.entity.PublishEntity">
+    select * from question order by view_count desc limit ${ofszie}, ${size};
+  </select>
+
 </mapper>

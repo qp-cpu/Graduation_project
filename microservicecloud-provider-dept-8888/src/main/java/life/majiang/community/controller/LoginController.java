@@ -69,8 +69,8 @@ public class LoginController {
         userEntit.setToken(UUID.randomUUID().toString());
         String filename=UUID.randomUUID().toString()+".png";
         userService.getphoto(avatarurl,filename);
-        String avatar_url1=sonImgPath+filename;
-        userEntit.setAvatarUrl(avatar_url1);
+        String avatar_url=sonImgPath+filename;
+        userEntit.setAvatarUrl(avatar_url);
         if(StringUtils.isBlank(username))
         {
             throw new CustmizeException(CustomizeErrorcode.SIGN_IS_NULL);

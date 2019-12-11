@@ -2,6 +2,8 @@ package life.majiang.community.controller;
 
 
 import life.majiang.community.dto.PageDto;
+import life.majiang.community.dto.PublishDto;
+import life.majiang.community.entity.PublishEntity;
 import life.majiang.community.service.PublishService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 
 @Controller
@@ -24,7 +27,9 @@ public class IndexController {
                         @RequestParam(name = "size",defaultValue = "5") Integer size
     ) {
         PageDto pageDtoList = publishService.selectAll(page, size);
+        List<PublishEntity> HotTopic=publishService.selectHotTopic();
         model.addAttribute("publishs", pageDtoList);
+        model.addAttribute("hotTopic", HotTopic);
         return "index";
     }
 

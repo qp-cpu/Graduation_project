@@ -14,7 +14,7 @@
     <result column="tag" property="tag" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, title, descrition, gmt_create, gmt_modified, creator, comment_count, view_count, 
+    id, title, descrition, gmt_create, gmt_modified, creator, comment_count, view_count,
     like_count, tag
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
@@ -28,13 +28,13 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="life.majiang.community.entity.PublishEntity" >
-    insert into question (id, title, descrition, 
-      gmt_create, gmt_modified, creator, 
-      comment_count, view_count, like_count, 
+    insert into question (id, title, descrition,
+      gmt_create, gmt_modified, creator,
+      comment_count, view_count, like_count,
       tag)
-    values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{descrition,jdbcType=VARCHAR}, 
-      #{gmtCreate,jdbcType=BIGINT}, #{gmtModified,jdbcType=BIGINT}, #{creator,jdbcType=INTEGER}, 
-      #{commentCount,jdbcType=INTEGER}, #{viewCount,jdbcType=INTEGER}, #{likeCount,jdbcType=INTEGER}, 
+    values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{descrition,jdbcType=VARCHAR},
+      #{gmtCreate,jdbcType=BIGINT}, #{gmtModified,jdbcType=BIGINT}, #{creator,jdbcType=INTEGER},
+      #{commentCount,jdbcType=INTEGER}, #{viewCount,jdbcType=INTEGER}, #{likeCount,jdbcType=INTEGER},
       #{tag,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="life.majiang.community.entity.PublishEntity" >
@@ -195,6 +195,11 @@
      select count(1) from question where title like #{serach}
   </select>
   <select id="serachAll" resultType="life.majiang.community.entity.PublishEntity">
-        select * from question where title like #{serach} order by gmt_create desc limit ${ofszie}, ${size};
+        select * ,IFNULL(title like #{serach},null) from question where title like #{serach} order by gmt_create desc limit ${ofszie}, ${size};
     </select>
+
+  <select id="selectHottopic"  parameterType="int" resultType="life.majiang.community.entity.PublishEntity">
+    select * from question order by view_count desc limit ${ofszie}, ${size};
+  </select>
+
 </mapper>

@@ -43,4 +43,6 @@ public interface PublishEntityMapper {
     Integer serachcount(@Param("serach") String serach);
 
     List<PublishEntity> serachAll(@Param("serach") String serach, @Param("ofszie") Integer ofszie, @Param("size") Integer size);
+
+    List<PublishEntity> selectHottopic(@Param("ofszie") Integer ofszie, @Param("size") Integer size);
 }

@@ -2,16 +2,17 @@ package life.majiang.community.controller;
 
 
 import life.majiang.community.dto.PageDto;
+import life.majiang.community.dto.PublishDto;
+import life.majiang.community.entity.PublishEntity;
 import life.majiang.community.service.PublishService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 
 @Controller
@@ -27,6 +28,9 @@ public class IndexController {
     ) {
         PageDto pageDtoList = publishService.selectAll(page, size);
         model.addAttribute("publishs", pageDtoList);
+//        添加热门话题
+        List<PublishEntity> HotTopic=publishService.selectHotTopic();
+        model.addAttribute("hotTopic", HotTopic);
         return "index";
     }
 

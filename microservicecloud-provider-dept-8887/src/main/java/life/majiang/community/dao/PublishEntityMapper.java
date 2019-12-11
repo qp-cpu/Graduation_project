@@ -3,6 +3,7 @@ package life.majiang.community.dao;
 import life.majiang.community.entity.PublishEntity;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 @Mapper
@@ -27,7 +28,7 @@ public interface PublishEntityMapper {
 
     Integer count1(@Param("creator") Integer creator);
 
-    List<PublishEntity> list(@Param("id") Integer id,@Param("ofszie") Integer ofszie, @Param("size") Integer size);
+    List<PublishEntity> list(@Param("id") Integer id, @Param("ofszie") Integer ofszie, @Param("size") Integer size);
 
     PublishEntity getBYid(@Param("id") Integer id);
 
@@ -41,5 +42,7 @@ public interface PublishEntityMapper {
 
     Integer serachcount(@Param("serach") String serach);
 
-    List<PublishEntity> serachAll(@Param("serach") String serach,@Param("ofszie") Integer ofszie, @Param("size") Integer size);
+    List<PublishEntity> serachAll(@Param("serach") String serach, @Param("ofszie") Integer ofszie, @Param("size") Integer size);
+
+    List<PublishEntity> selectHottopic(@Param("ofszie") Integer ofszie, @Param("size") Integer size);
 }

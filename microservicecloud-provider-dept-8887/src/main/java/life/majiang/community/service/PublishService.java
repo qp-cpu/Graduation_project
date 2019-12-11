@@ -160,7 +160,12 @@ public class PublishService {
             page=pageDto.getTotalpage();
         }
         Integer ofsize= size * (page-1);
+
         List<PublishEntity> publishEntityList=publishDao.serachAll(serach,ofsize,size);
+        if(publishEntityList.size()==0)
+        {
+            throw new CustmizeException(CustomizeErrorcode.QUESTION_NOT);
+        }
         List<PublishDto> publishDtos=new ArrayList<>();
 
         for (PublishEntity publishEntity:publishEntityList)
@@ -175,5 +180,10 @@ public class PublishService {
         }
         pageDto.setPublishDtos(publishDtos);
         return pageDto;
+    }
+
+    public List<PublishEntity> selectHotTopic() {
+        List<PublishEntity> publishEntityList = publishDao.selectHottopic(1,10);
+        return publishEntityList;
     }
 }

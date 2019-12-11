@@ -9,7 +9,6 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
-
     <modules>
         <module>microservicecloud-provider-dept-8887</module>
         <module>microservicecloud-eureka-7001</module>

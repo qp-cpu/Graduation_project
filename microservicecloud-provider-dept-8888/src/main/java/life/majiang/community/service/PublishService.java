@@ -181,4 +181,9 @@ public class PublishService {
         pageDto.setPublishDtos(publishDtos);
         return pageDto;
     }
+
+    public List<PublishEntity> selectHotTopic() {
+        List<PublishEntity> publishEntityList = publishDao.selectHottopic(1,10);
+        return publishEntityList;
+    }
 }
