@@ -1,29 +1,29 @@
 package life.majiang.community.service;
 
 
+import com.github.tobato.fastdfs.domain.StorePath;
+import com.github.tobato.fastdfs.service.FastFileStorageClient;
 import life.majiang.community.dao.UserEntityMapper;
 import life.majiang.community.entity.UserEntity;
 import life.majiang.community.exception.CustmizeException;
 import life.majiang.community.exception.CustomizeErrorcode;
+import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
-import java.io.FileOutputStream;
+
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLConnection;
+
 
 
 @Service
 public class UserService {
 
-    @Value("${absoluteImgPath}")
-    String absoluteImgPath;
-
-    @Value("${sonImgPath}")
-    String sonImgPath;
+    @Autowired
+    private FastFileStorageClient fastFileStorageClient;
 
     @Autowired
     private UserEntityMapper userDao;
@@ -70,40 +70,15 @@ public class UserService {
         return userDao.selectBYnameAndpwd(userEntity);
     }
 
-
-    public void getphoto(String avatar_url, String filename) {
-        try{
-
-            // 构造URL
-            URL url = new URL(avatar_url);
-            // 打开连接
-            URLConnection con = url.openConnection();
-            //设置请求超时为5s
-            con.setConnectTimeout(5*1000);
-            // 输入流
-            InputStream is = con.getInputStream();
-
-            // 1K的数据缓冲
-            byte[] bs = new byte[1024];
-            // 读取到的数据长度
-            int len;
-            // 输出的文件流
-            File sf=new File(absoluteImgPath);
-            if(!sf.exists()){
-                sf.mkdirs();
-            }
-            OutputStream os = new FileOutputStream(sf.getPath()+"\\"+filename);
-            // 开始读取
-            while ((len = is.read(bs)) != -1) {
-                os.write(bs, 0, len);
-            }
-            // 完毕，关闭所有链接
-            os.close();
-            is.close();
-        }
-        catch (Exception e)
-        {
-            throw  new CustmizeException(CustomizeErrorcode.READPHOTO_ERROR);
-        }
+    public String getphoto(String avatar_url) throws Exception {
+        // 构造URL
+        URL url = new URL(avatar_url);
+        HttpURLConnection conn = (HttpURLConnection)url.openConnection();
+        //通过输入流获取图片数据
+        InputStream inputStream = conn.getInputStream();
+        //注！图片的大小如果错误则会出现图片上传成功但查看图片时图片部分丢失的情况
+        StorePath storePath= fastFileStorageClient.uploadFile(inputStream, IOUtils.toByteArray(url).length,"png",null);
+        inputStream.close();
+        return storePath.getFullPath();
     }
 }

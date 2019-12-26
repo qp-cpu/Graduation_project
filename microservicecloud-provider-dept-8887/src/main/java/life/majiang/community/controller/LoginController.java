@@ -8,9 +8,11 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
@@ -19,18 +21,18 @@ import java.util.UUID;
 @Controller
 public class LoginController {
 
+    @Value("${ip.addr}")
+    private String ipaddr;
+
     @Autowired
     private UserService userService;
 
-    @Value("${absoluteImgPath}")
-    String absoluteImgPath;
-
-    @Value("${sonImgPath}")
-    String sonImgPath;
-
+    @Autowired
+    private RestTemplate restTemplate;
 
     @GetMapping("/login")
-    public String login(){
+    public String login(Model model){
+        model.addAttribute("ipaddr",ipaddr);
         return "login";
     }
 
@@ -44,7 +46,6 @@ public class LoginController {
         UserEntity selectuser = userService.selectuser(userEntity);
         if (selectuser !=null)
         {
-
             Cookie token = new Cookie("token", selectuser.getToken());
             response.addCookie(token);
             return "redirect:/";
@@ -59,7 +60,7 @@ public class LoginController {
                          @RequestParam(value = "password",required =false) String password,
                          @RequestParam(value = "description" ,required = false) String description,
                          @RequestParam(value = "avatarurl",required = false) String avatarurl
-    ){
+    ) throws Exception {
         UserEntity userEntit=new UserEntity();
         userEntit.setName(username);
         userEntit.setAccountId(password);
@@ -68,8 +69,7 @@ public class LoginController {
         userEntit.setBio(description);
         userEntit.setToken(UUID.randomUUID().toString());
         String filename=UUID.randomUUID().toString()+".png";
-        userService.getphoto(avatarurl,filename);
-        String avatar_url=sonImgPath+filename;
+        String avatar_url = "http://121.41.85.42/"+userService.getphoto(avatarurl);
         userEntit.setAvatarUrl(avatar_url);
         if(StringUtils.isBlank(username))
         {

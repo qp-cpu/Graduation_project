@@ -12,11 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableWebMvc
 public class Webconfig implements WebMvcConfigurer {
 
-    @Value("${absoluteImgPath}")
-    String absoluteImgPath;
 
-    @Value("${sonImgPath}")
-    String sonImgPath;
 
     @Autowired
     private SessionInterceptor sessionInterceptor;
@@ -33,7 +29,6 @@ public class Webconfig implements WebMvcConfigurer {
         registry.addResourceHandler("/lib/**").addResourceLocations("classpath:/static/lib/");
         registry.addResourceHandler("/fonts/**").addResourceLocations("classpath:/static/fonts/");
         registry.addResourceHandler("/plugins/**").addResourceLocations("classpath:/static/plugins/");
-        registry.addResourceHandler(sonImgPath + "**").addResourceLocations("file:"+absoluteImgPath);
         WebMvcConfigurer.super.addResourceHandlers(registry);
     }
 }

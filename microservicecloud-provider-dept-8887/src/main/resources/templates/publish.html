@@ -16,9 +16,9 @@
 <div th:insert="~{navigation :: nav}"></div>
 <div class="container-fluid main">
     <div class="row">
-            <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 发起</h2>
-            <hr>
-           <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+        <h2><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 发起</h2>
+        <hr>
+        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
             <form action="/publish" method="post">
                 <input type="hidden" name="id" th:value="${id}">
                 <div class="form-group">
@@ -34,12 +34,13 @@
                               cols="30"
                               rows="10"></textarea>
                 </div>
-                <script type="text/javascript">
+                <script th:inline="javascript">
                     $(function () {
+                        var ipaddr = [[${ipaddr}]];
                         var editor = editormd("question-editor", {
                             width: "100%",
                             height: 350,
-                            path: "http://localhost:8887/static/lib/",
+                            path: "http://"+ipaddr+":8887/static/lib/",
                             delay: 0,
                             // watch: false,
                             placeholder: "请输入问题描述",

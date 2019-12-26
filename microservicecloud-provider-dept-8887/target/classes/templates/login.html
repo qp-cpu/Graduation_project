@@ -20,10 +20,10 @@
     <input type="text" id="username" name="username" style="margin-bottom: 10px" class="form-control" placeholder="Username" th:placeholder="请输入用户名"
            required="" autofocus="">
     <input  type="password" id="password" name="password" style="margin-bottom: 10px" class="form-control" placeholder="Password"
-           th:placeholder="请输入密码" required="">
+            th:placeholder="请输入密码" required="">
     <button class="btn btn-lg btn-primary btn-block" type="submit ">登录</button>
     <p class="mt-5 mb-3 text-muted" style="margin-top: 10px">© 2019-2020</p>
-    <a class="btn btn-sm" href="https://github.com/login/oauth/authorize?client_id=079686b431e42084be6c&redirect_uri=http://localhost:8887/callback&scope=user&state=1">github登录</a>
+    <a class="btn btn-sm" th:href="@{'https://github.com/login/oauth/authorize?client_id=079686b431e42084be6c&redirect_uri=http://'+ ${ipaddr}+':8887/callback&scope=user&state=1'}">github登录</a>
     <a class="btn btn-sm" href="/sign">注册</a>
 </form>
 </body>
