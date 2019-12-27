@@ -162,7 +162,7 @@ CodeMirror.defineMode("tiddlywiki", function () {
         return ret('brace', 'brace');
       }
     }
-    if (ch == "@") {    // check for space link. TODO fix @@...@@ highlighting
+    if (ch == "@") {    // check for space link. TODO fix @MavenProject: MicroService-Project:microservicecloud-provider-dept-8888:1.0-SNAPSHOT @ E:\\springcloud\\Graduation_project\\microservicecloud-provider-dept-8888\\pom.xml@ highlighting
       stream.eatWhile(isSpaceName);
       return ret("link", "link");
     }

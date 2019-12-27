@@ -12,8 +12,8 @@
         <module name="microservicecloud-provider-dept-8887" />
         <module name="microservicecloudzuulgateway9527" />
         <module name="microservicecloudeureka7001" />
-        <module name="microservicecloudproviderdept8887" />
         <module name="microservicecloudproviderdept8888" />
+        <module name="microservicecloudproviderdept8887" />
         <module name="microservicecloud-eureka-7001" />
       </profile>
     </annotationProcessing>

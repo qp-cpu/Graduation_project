@@ -14,7 +14,6 @@
         <module>microservicecloud-eureka-7001</module>
         <module>microservicecloud-zuul-gateway-9527</module>
         <module>microservicecloud-provider-dept-8888</module>
-        <module>Test1</module>
     </modules>
 
 

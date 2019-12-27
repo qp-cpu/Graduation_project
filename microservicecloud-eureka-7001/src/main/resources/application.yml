@@ -12,3 +12,6 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:7001/eureka/        #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址。
 
 
+logging:
+  level:
+    com.netflix: warn

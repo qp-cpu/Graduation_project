@@ -4,10 +4,13 @@ import life.majiang.community.cache.Tagcache;
 import life.majiang.community.dto.PublishDto;
 import life.majiang.community.entity.PublishEntity;
 import life.majiang.community.entity.UserEntity;
+import life.majiang.community.exception.CustomizeErrorcode;
 import life.majiang.community.service.PublishService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -26,6 +29,9 @@ public class PublishController {
     @Autowired
     private Tagcache tagcache;
 
+    @Value("${ip.addr}")
+    private String ipaddr;
+
     @GetMapping("/publish/{id}")
     public String edit(@PathVariable("id") Integer id,
                        Model model)
@@ -37,12 +43,14 @@ public class PublishController {
         model.addAttribute("id",publishDto.getId());
         model.addAttribute("update","修改");
         model.addAttribute("tags",tagcache.get());
+        model.addAttribute("ipaddr",ipaddr);
         return "publish";
     }
 
     @GetMapping("/publish")
     public String publish(Model model){
         model.addAttribute("tags",tagcache.get());
+        model.addAttribute("ipaddr",ipaddr);
         return "publish";
     }
 
@@ -58,7 +66,7 @@ public class PublishController {
         model.addAttribute("description",description);
         model.addAttribute("tag",tag);
         model.addAttribute("tags",tagcache.get());
-
+        model.addAttribute("ipaddr",ipaddr);
         if(description == null || description == "")
         {
             model.addAttribute("error","问题描述不能为空");
