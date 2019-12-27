@@ -2,46 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df9ff6fe-10c8-4be7-a8e2-5c31a83d7f11" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/read.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/classes/META-INF/microservicecloudproviderdept8887.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/classes/static/lib/codemirror/mode/tiddlywiki/tiddlywiki.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/classes/static/lib/codemirror/mode/tiddlywiki/tiddlywiki.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/CommunityApplicationdemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/CommunityApplicationdemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/PublishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/PublishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/interceptor/Webconfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/interceptor/Webconfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/templates/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/templates/publish.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/life/majiang/community/CommunityApplicationdemo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/life/majiang/community/CommunityApplicationdemo1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/life/majiang/community/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/life/majiang/community/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/life/majiang/community/controller/PublishController.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/life/majiang/community/controller/PublishController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/life/majiang/community/interceptor/Webconfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/life/majiang/community/interceptor/Webconfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/life/majiang/community/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/life/majiang/community/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/fonts/editormd-logo.eot" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/fonts/editormd-logo.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/images/logos/editormd-favicon-16x16.ico" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/images/logos/editormd-favicon-16x16.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/images/logos/editormd-favicon-24x24.ico" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/images/logos/editormd-favicon-24x24.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/images/logos/editormd-favicon-32x32.ico" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/images/logos/editormd-favicon-32x32.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/images/logos/editormd-favicon-48x48.ico" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/images/logos/editormd-favicon-48x48.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/images/logos/editormd-favicon-64x64.ico" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/images/logos/editormd-favicon-64x64.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/lib/codemirror/mode/tiddlywiki/tiddlywiki.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/static/lib/codemirror/mode/tiddlywiki/tiddlywiki.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/templates/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/templates/publish.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/classes/com/qp/microservice/Zuul_9527_StartSpringCloudApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/classes/com/qp/microservice/Zuul_9527_StartSpringCloudApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -101,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="32" column="68" lean-forward="true" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
+            <state relative-caret-position="608">
+              <caret line="32" column="82" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -119,23 +81,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="36" column="37" selection-end-line="45" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/read.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="741">
+                <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/controller/LoginController.java">
+        <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="23" column="21" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="254">
+              <caret line="36" column="37" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -193,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/NtificationEntityService.java" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/CommunityApplication.java" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/templates/navigation.html" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/mapper/UserEntityMapper.xml" />
@@ -244,6 +205,7 @@
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/read.md" />
       </list>
     </option>
   </component>
@@ -865,7 +827,7 @@
       <workItem from="1577153088945" duration="18246000" />
       <workItem from="1577236562487" duration="7764000" />
       <workItem from="1577325618152" duration="15383000" />
-      <workItem from="1577409186730" duration="12690000" />
+      <workItem from="1577409186730" duration="13713000" />
     </task>
     <servers />
   </component>
@@ -902,10 +864,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140896000" />
+    <option name="totallyTimeSpent" value="141919000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32249466" />
@@ -1008,7 +970,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Test1/pom.xml" />
     <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/controller/CustmizeErrorController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1314,16 +1275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/java/com/qp/microservice/EurekaServer7001_App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/java/com/qp/microservice/Zuul_9527_StartSpringCloudApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1338,13 +1289,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1371,8 +1315,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="32" column="68" lean-forward="true" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
+        <state relative-caret-position="608">
+          <caret line="32" column="82" selection-start-line="32" selection-start-column="78" selection-end-line="32" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/java/com/qp/microservice/EurekaServer7001_App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="741">
+            <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
