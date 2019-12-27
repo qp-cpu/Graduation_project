@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df9ff6fe-10c8-4be7-a8e2-5c31a83d7f11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/read.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="df9ff6fe-10c8-4be7-a8e2-5c31a83d7f11" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/" />
@@ -85,8 +82,8 @@
         <entry file="file://$PROJECT_DIR$/read.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="741">
-                <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+              <first_editor relative-caret-position="114">
+                <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
               </first_editor>
               <second_editor />
             </state>
@@ -827,7 +824,7 @@
       <workItem from="1577153088945" duration="18246000" />
       <workItem from="1577236562487" duration="7764000" />
       <workItem from="1577325618152" duration="15383000" />
-      <workItem from="1577409186730" duration="13713000" />
+      <workItem from="1577409186730" duration="14386000" />
     </task>
     <servers />
   </component>
@@ -864,10 +861,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141919000" />
+    <option name="totallyTimeSpent" value="142592000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32249466" />
@@ -1340,8 +1337,8 @@
     <entry file="file://$PROJECT_DIR$/read.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="741">
-            <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+          <first_editor relative-caret-position="114">
+            <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
           </first_editor>
           <second_editor />
         </state>
