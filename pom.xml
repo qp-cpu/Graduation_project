@@ -57,7 +57,6 @@
                 <scope>runtime</scope>
                 <version>8.0.17</version>
             </dependency>
-
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
