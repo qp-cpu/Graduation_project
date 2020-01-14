@@ -4,7 +4,6 @@ server:
 
 eureka:
   instance:
-    #    hostname: ${SPRING-CLOUD-HOSTNAME} #eureka服务端的实例名称
     hostname: ${SPRING-CLOUD-EUREKA} #eureka服务端的实例名称
   client:
     register-with-eureka: false #false表示不向注册中心注册自己。
