@@ -2,7 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df9ff6fe-10c8-4be7-a8e2-5c31a83d7f11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/docker/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/docker/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-eureka-7001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-eureka-7001/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-eureka-7001/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-eureka-7001/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-eureka-7001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-eureka-7001/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-eureka-7001/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-eureka-7001/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-eureka-7001/target/microservicecloud-eureka-7001.jar" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-eureka-7001/target/microservicecloud-eureka-7001.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-eureka-7001/target/microservicecloud-eureka-7001.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-eureka-7001/target/microservicecloud-eureka-7001.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/CommunityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/CommunityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/classes/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/classes/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/classes/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/microservicecloud-provider-dept-8887.jar" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/microservicecloud-provider-dept-8887.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/microservicecloud-provider-dept-8887.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8887/target/microservicecloud-provider-dept-8887.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/microservicecloud-provider-dept-8888.jar" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/microservicecloud-provider-dept-8888.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/microservicecloud-provider-dept-8888.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-provider-dept-8888/target/microservicecloud-provider-dept-8888.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/classes/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/classes/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/classes/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/microservicecloud-zuul-gateway-9527.jar" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/microservicecloud-zuul-gateway-9527.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/microservicecloud-zuul-gateway-9527.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/target/microservicecloud-zuul-gateway-9527.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,97 +67,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/AuthorizeController.java">
+        <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application-dev.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-290">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="342">
+              <caret line="18" column="84" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="84" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/IndexController.java">
+        <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/docker/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="152">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/CustmizeErrorController.java">
+        <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/FileController.java">
+        <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/provider/GithubProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="34" column="29" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/interceptor/Webconfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/NtificationEntityService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="888">
-              <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/PublishService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-570">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
-              <caret line="81" column="36" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="475">
+              <caret line="182" column="21" selection-start-line="135" selection-start-column="10" selection-end-line="182" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -151,14 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/exception/CustomizeErrorcode.java" />
-        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/exception/CustomizeErrorcode.java" />
-        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/controller/AuthorizeController.java" />
-        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/AuthorizeController.java" />
-        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/PublishService.java" />
-        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/dao/PublishEntityMapper.java" />
-        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/mapper/PublishEntityMapper.xml" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/service/PublishService.java" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/dao/PublishEntityMapper.java" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/controller/IndexController.java" />
@@ -174,17 +149,12 @@
         <option value="$PROJECT_DIR$/Test1/src/test/java/com/qp/test/FastDfsApplocationTset.java" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/interceptor/Webconfig.java" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/service/UserService.java" />
-        <option value="$PROJECT_DIR$/microservicecloud-eureka-7001/pom.xml" />
-        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/CommunityApplication.java" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/controller/FileController.java" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/controller/FastDfsControler.java" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/controller/PublishController.java" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/templates/publish.html" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/pom.xml" />
-        <option value="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/pom.xml" />
-        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/pom.xml" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/UserService.java" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/PublishController.java" />
@@ -193,15 +163,28 @@
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/interceptor/Webconfig.java" />
         <option value="$PROJECT_DIR$/read.md" />
-        <option value="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application-test.properties" />
+        <option value="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/java/com/qp/microservice/Zuul_9527_StartSpringCloudApp.java" />
         <option value="$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/CommunityApplication.java" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application-test.properties" />
+        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application-test.properties" />
+        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/docker/Dockerfile" />
+        <option value="$PROJECT_DIR$/microservicecloud-eureka-7001/pom.xml" />
+        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/docker/Dockerfile" />
+        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8887/pom.xml" />
+        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/docker/Dockerfile" />
+        <option value="$PROJECT_DIR$/microservicecloud-provider-dept-8888/pom.xml" />
+        <option value="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/docker/Dockerfile" />
+        <option value="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/pom.xml" />
       </list>
     </option>
   </component>
@@ -221,7 +204,17 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="microservicecloud-zuul-gateway-9527" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="microservicecloud-zuul-gateway-9527" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -266,6 +259,14 @@
               <item name="microservicecloud-eureka-7001" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="microservicecloud-eureka-7001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
@@ -337,6 +338,14 @@
               <item name="microservicecloud-provider-dept-8887" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="microservicecloud-provider-dept-8887" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -391,6 +400,30 @@
               <item name="life" type="462c0819:PsiDirectoryNode" />
               <item name="majiang" type="462c0819:PsiDirectoryNode" />
               <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="microservicecloud-provider-dept-8887" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="life" type="462c0819:PsiDirectoryNode" />
+              <item name="majiang" type="462c0819:PsiDirectoryNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="microservicecloud-provider-dept-8887" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="life" type="462c0819:PsiDirectoryNode" />
+              <item name="majiang" type="462c0819:PsiDirectoryNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -404,6 +437,12 @@
             <path>
               <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
               <item name="Graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="microservicecloud-provider-dept-8887" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation_project" type="462c0819:PsiDirectoryNode" />
               <item name="microservicecloud-provider-dept-8888" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -418,6 +457,14 @@
               <item name="microservicecloud-provider-dept-8888" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="microservicecloud-provider-dept-8888" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
@@ -503,6 +550,42 @@
               <item name="life" type="462c0819:PsiDirectoryNode" />
               <item name="majiang" type="462c0819:PsiDirectoryNode" />
               <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="microservicecloud-provider-dept-8888" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="life" type="462c0819:PsiDirectoryNode" />
+              <item name="majiang" type="462c0819:PsiDirectoryNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="microservicecloud-provider-dept-8888" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="life" type="462c0819:PsiDirectoryNode" />
+              <item name="majiang" type="462c0819:PsiDirectoryNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="microservicecloud-provider-dept-8888" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="life" type="462c0819:PsiDirectoryNode" />
+              <item name="majiang" type="462c0819:PsiDirectoryNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
               <item name="interceptor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -540,6 +623,12 @@
             <path>
               <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
               <item name="Graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="microservicecloud-provider-dept-8888" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation_project" type="462c0819:PsiDirectoryNode" />
               <item name="microservicecloud-zuul-gateway-9527" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -554,6 +643,14 @@
               <item name="microservicecloud-zuul-gateway-9527" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="microservicecloud-zuul-gateway-9527" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
@@ -601,6 +698,12 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="comqpmicroservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graduation_project" type="462c0819:PsiDirectoryNode" />
+              <item name="microservicecloud-zuul-gateway-9527" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -618,7 +721,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/docker" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -626,18 +729,16 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\qp\Desktop\MicroService-Project\MicroService-Project\microservicecloud-provider-dept-8887\src\main\resources\static" />
+      <recent name="C:\Users\qp\Desktop\MicroService-Project\MicroService-Project\microservicecloud-provider-dept-8887\src\main\resources\static\js" />
+      <recent name="C:\Users\qp\Desktop\MicroService-Project\MicroService-Project\microservicecloud-provider-dept-8887\src\main\resources\static\css" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.qp.test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\springcloud\Graduation_project\microservicecloud-zuul-gateway-9527\src\main\resources" />
-      <recent name="E:\springcloud\Graduation_project\microservicecloud-provider-dept-8888\src\main\resources" />
-      <recent name="E:\springcloud\Graduation_project\microservicecloud-provider-dept-8887\src\main\resources" />
-      <recent name="C:\Users\qp\Desktop\MicroService-Project\microservicecloud-provider-dept-8888\src\main\resources\static\images" />
-      <recent name="C:\Users\qp\Desktop\MicroService-Project\MicroService-Project\microservicecloud-provider-dept-8888\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="life.majiang.community" />
@@ -646,10 +747,12 @@
       <recent name="life.majiang.community.advice" />
       <recent name="life.majiang.community.entity" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\qp\Desktop\MicroService-Project\MicroService-Project\microservicecloud-provider-dept-8887\src\main\resources\static" />
-      <recent name="C:\Users\qp\Desktop\MicroService-Project\MicroService-Project\microservicecloud-provider-dept-8887\src\main\resources\static\js" />
-      <recent name="C:\Users\qp\Desktop\MicroService-Project\MicroService-Project\microservicecloud-provider-dept-8887\src\main\resources\static\css" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\springcloud\Graduation_project\microservicecloud-zuul-gateway-9527\src\main\docker" />
+      <recent name="E:\springcloud\Graduation_project\microservicecloud-provider-dept-8888\src\main\docker" />
+      <recent name="E:\springcloud\Graduation_project\microservicecloud-provider-dept-8887\src\main\docker" />
+      <recent name="E:\springcloud\Graduation_project\microservicecloud-zuul-gateway-9527\src\main\resources" />
+      <recent name="E:\springcloud\Graduation_project\microservicecloud-provider-dept-8888\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -801,7 +904,13 @@
       <workItem from="1577927681748" duration="889000" />
       <workItem from="1578377227311" duration="1521000" />
       <workItem from="1578907052954" duration="933000" />
-      <workItem from="1578971387524" duration="916000" />
+      <workItem from="1578971387524" duration="7630000" />
+      <workItem from="1579050173132" duration="1315000" />
+      <workItem from="1579069255203" duration="154000" />
+      <workItem from="1579070723075" duration="6422000" />
+      <workItem from="1583891984233" duration="4032000" />
+      <workItem from="1583981592496" duration="1725000" />
+      <workItem from="1584065973802" duration="5319000" />
     </task>
     <servers />
   </component>
@@ -838,13 +947,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153450000" />
+    <option name="totallyTimeSpent" value="179131000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2457356" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28198293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -854,14 +962,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49626866" weight="0.37310195" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49626866" visible="true" weight="0.38720173" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" weight="0.3373102" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="9" weight="0.32968238" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50373137" side_tool="true" weight="0.37201735" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3274918" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -870,7 +978,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" sideWeight="0.4991453" weight="0.51750547" />
+      <window_info anchor="right" id="Maven" order="3" sideWeight="0.4991453" visible="true" weight="0.2531983" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -880,7 +988,7 @@
       <window_info anchor="right" id="Coverage" order="10" sideWeight="0.50085473" side_tool="true" weight="0.27238807" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.6695843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28198293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -890,14 +998,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49626866" visible="true" weight="0.37787515" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49626866" visible="true" weight="0.19956616" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" weight="0.3373102" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="9" weight="0.32968238" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50373137" side_tool="true" weight="0.37201735" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3274918" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -906,7 +1014,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" sideWeight="0.4991453" weight="0.31509846" />
+      <window_info anchor="right" id="Maven" order="3" sideWeight="0.4991453" visible="true" weight="0.2531983" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -944,200 +1052,191 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/templates/question.html">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application-test.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        <state relative-caret-position="284">
+          <caret line="18" column="87" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="87" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/templates/serach.html">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/exception/CustmizeException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="38">
+          <caret line="2" column="57" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/templates/sign.html">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/exception/ICustomizeErrorcodde.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/controller/FastDfsControler.java">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/exception/CustomizeErrorcode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="38">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/controller/FileController.java">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/interceptor/SessionInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="-37">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-eureka-7001/pom.xml">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/interceptor/Webconfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="43" column="18" selection-start-line="22" selection-start-column="8" selection-end-line="43" selection-end-column="18" />
+        <state relative-caret-position="392">
+          <caret line="30" column="102" lean-forward="true" selection-start-line="30" selection-start-column="102" selection-end-line="30" selection-end-column="102" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/templates/login.html">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/service/CommentService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="21" column="40" lean-forward="true" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="95">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/controller/IndexController.java">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/service/NtificationEntityService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="95">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/service/PublishService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="77" column="36" selection-end-line="84" />
+        <state relative-caret-position="449">
+          <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/cache/Tagcache.java">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/enums/ContentTypeEnums.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/enums/NtificationStatusEnums.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/enums/NtificationTypeEnums.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/entity/CommentEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/entity/NtificationEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/entity/NtificationEntityExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/entity/PublishEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/entity/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/dto/AccesstokenDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/advice/CustomizeExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
+        <state relative-caret-position="-178">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/controller/PublishController.java">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/cache/Tagcache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="46" column="25" lean-forward="true" selection-end-line="108" />
+        <state relative-caret-position="722">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/templates/question.html">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/provider/GithubProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2451" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/templates/publish.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1518">
-          <caret line="111" column="7" selection-end-line="111" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="532">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/templates/login.html">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/CommentService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        <state relative-caret-position="1444">
+          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/templates/publish.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/templates/error.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/PublishController.java">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/PublishService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/read.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="114">
-            <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="61" column="38" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="38" />
+        <state relative-caret-position="1026">
+          <caret line="81" column="36" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/pom.xml">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/NtificationEntityService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application-test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="623">
+          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1151,23 +1250,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="50" column="82" selection-start-line="50" selection-start-column="82" selection-end-line="50" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application-test.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="-171">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/java/life/majiang/community/CommunityApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="285">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="e#892#893#0" expanded="true" />
@@ -1176,148 +1268,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application-test.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        <state relative-caret-position="171">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/CommunityApplicationdemo1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="266">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/java/com/qp/microservice/Zuul_9527_StartSpringCloudApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="133">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application-test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1881">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-eureka-7001/microservicecloudeureka7001.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-eureka-7001/src/main/docker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-eureka-7001/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="82" column="21" selection-start-line="43" selection-start-column="10" selection-end-line="82" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/src/main/docker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/docker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8887/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-798">
-          <caret line="18" selection-start-line="18" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="456">
+          <caret line="193" column="21" selection-start-line="154" selection-start-column="9" selection-end-line="193" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="84" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/docker/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="475">
+          <caret line="182" column="21" selection-start-line="135" selection-start-column="10" selection-end-line="182" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/src/main/resources/application-test.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/resources/application-test.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="43" selection-start-line="43" selection-end-line="48" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/CommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/CustmizeErrorController.java">
+    <entry file="file://$PROJECT_DIR$/microservicecloud-zuul-gateway-9527/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/FileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/provider/GithubProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/interceptor/Webconfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/NtificationEntityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/PublishService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-570">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="81" column="36" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/AuthorizeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-290">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservicecloud-provider-dept-8888/src/main/java/life/majiang/community/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
         </state>
       </provider>
     </entry>
