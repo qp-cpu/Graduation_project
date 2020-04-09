@@ -1,0 +1,4 @@
+2020-03-20 11:28:56.640 [localhost-startStop-1] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-03-20 11:29:02.062 [main] WARN  o.s.c.netflix.archaius.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
+2020-03-20 11:29:02.065 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-03-20 11:29:03.100 [main] WARN  com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry

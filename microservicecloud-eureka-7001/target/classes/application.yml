@@ -1,7 +1,5 @@
 spring:
   profiles:
-    active: test
+    active: dev
 logging:
-  level: warn
-  path: /logs/
-  file: mylog.log
+  config: classpath:log/logback-spring.xml
